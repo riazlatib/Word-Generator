@@ -16,18 +16,15 @@ h1 {
 }
 
 #wordbox {
-    /*opacity: 0;*/
     margin: 20% auto 0;
     display: block;
-    width: 300px;
+    width: 100%;
     height: 40px;
-    font-size: 30px;
+    font-size: 14px;
     text-align: center;
-    background: #fff;
     border-radius: 6px;
     color: #777;
     transition: 1s linear;
-    border: 1px solid #ccc;
 }
 
 #button {

@@ -40,18 +40,34 @@ function BuildArray(size){
   return this
 }
 
-function PickRandomWord(frm) {
-  // Generate a random number between 1 and NumberOfWords
-  var rnd = Math.ceil(Math.random() * NumberOfWords)
+function PickRandomWord() {
+// ---------------------------------------------------------------------------- ROUGH DRAFT
+// BASIC SENTENCE STRUCTURE
+// Parts of Sentences: Subject, Predicate, Object, Indirect Object, Complement
 
-  // Display the word inside the text box
-  frm.WordBox.value = words[rnd]
-}
+var subject = ['Asian Parents', 'Aliens', 'Asperger\'s Syndrome', 'Attention whore', 'As a friend', 'American idiot', 'Affirmative action', 'Avenged sevenfold'];
+var suject_total = subject.length;
+var subject_random = Math.floor(Math.random() * suject_total);
 
-// -------------------------------------- ROUGH DRAFT
+var predicate = ['grow older every day', 'remains happy during her', 'would be perfect for', 'are perplexing when', 'is convincingly', 'is introspectively', 'smells piney and clean in', 'were ready, willing and able to'];
+var predicate_total = predicate.length;
+var predicate_random = Math.floor(Math.random() * predicate_total);
 
-var subject = ['one', 'two', 'three'];
+var object = ['berate', 'criticize', 'calculate', 'emphasize', 'collaborate', 'bathe', 'floss', 'urinate'];
+var object_total = object.length;
+var object_random = Math.floor(Math.random() * object_total);
 
-for (var i = 0; i <= subject.length; i++){
-  console.log(subject[i]);
+var ind_object = ['the floor', 'inside the car', 'on the roof', 'in the kitchen', 'while in the bathroom', 'at college', 'near the park', 'on a boat'];
+var ind_object_total = ind_object.length;
+var ind_object_random = Math.floor(Math.random() * ind_object_total);
+
+var compliment = ['with style and grace.', 'being excellently poised.', 'swung and a miss.', 'deeply coveted huggingly.', 'poised willingly.', 'ambidextrously challenged.', 'unilaterally screwed.', 'and went good night.'];
+var compliment_total = compliment.length;
+var compliment_random = Math.floor(Math.random() * compliment_total);
+
+var sentance = subject[subject_random] + ' ' + predicate[predicate_random] + ' ' + object[object_random] + ' ' + ind_object[ind_object_random] + ' ' + compliment[compliment_random];
+
+document.getElementById("wordbox").innerHTML = sentance;
+// ---------------------------------------------------------------------------- ROUGH DRAFT
+
 }
