@@ -45,7 +45,7 @@ function PickRandomWord() {
 // BASIC SENTENCE STRUCTURE
 // Parts of Sentences: Subject, Predicate, Object, Indirect Object, Complement
 
-var subject = ['Asian Parents', 'Aliens', 'Asperger\'s Syndrome', 'Attention whore', 'As a friend', 'American idiot', 'Affirmative action', 'Avenged sevenfold'];
+var subject = ['Asian Parents', 'Aliens', 'Asperger\'s Syndrome', 'Attention whore', 'As a friend', 'Villiage idiot', 'Affirmative action', 'Avenged sevenfold'];
 var suject_total = subject.length;
 var subject_random = Math.floor(Math.random() * suject_total);
 
