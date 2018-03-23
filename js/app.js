@@ -1,5 +1,3 @@
-console.log('loaded');
-
 var NumberOfWords = 28
 
 var words = new BuildArray(NumberOfWords)
